@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "lib": ["es6"],
+        "module": "NodeNext",
+        "allowJs": true,
+        "target": "es6",
+        "moduleResolution": "node",
+        "esModuleInterop" : true,
+        "resolveJsonModule": true,
+    },
+    "exclude": ["node_modules"],
+    "include": ["src/**/*"]
+}
