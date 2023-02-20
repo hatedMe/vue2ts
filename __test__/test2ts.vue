@@ -204,8 +204,6 @@ export default class Test extends Mixins(baseMin,baseMin2) {
 </script>
 
 <style>
-@import "./style/sprites.scss";
-@import "./style/main.css";
 .container {
     height: 100%;
     display: flex;
