@@ -2,7 +2,6 @@ import { parse } from "@babel/parser";
 import traverse from "@babel/traverse";
 import generate from "@babel/generator";
 import * as t from "@babel/types";
-import _ from "lodash";
 import fs from "fs";
 import path from "path";
 // 处理vue生命周期map
@@ -725,7 +724,7 @@ export default function (input: string): string {
 
             const hasMixinsStr = mixinsOpt.length
                 ? `extends Mixins(${mixinsOpt.join(",")})`
-                : "Vue";
+                : "extends Vue";
             const identifierExp = `${className || ""} ${hasMixinsStr}`;
 
             const classDeclaration = t.exportDefaultDeclaration(
