@@ -1,6 +1,6 @@
 {
   "name": "@obciid/vue2ts",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "将vue文件转换为vue-ts文件",
   "main": "dist/index.js",
   "bin": {

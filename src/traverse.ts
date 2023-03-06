@@ -467,7 +467,7 @@ export default function (input: string): string {
                                     generator,
                                     async
                                 );
-                                Node.decorators = [t.decorator(t.identifier(`Wacth('${name}')`))];
+                                Node.decorators = [t.decorator(t.identifier(`Watch('${name}')`))];
                                 classMethods.push(Node);
                             }
                             // 处理watch的字符串 例如： watchData3: 'someMethod',
@@ -496,7 +496,7 @@ export default function (input: string): string {
                                     false,
                                     false
                                 );
-                                Node.decorators = [t.decorator(t.identifier(`Wacth('${name}')`))];
+                                Node.decorators = [t.decorator(t.identifier(`Watch('${name}')`))];
                                 classMethods.push(Node);
                             }
                             // 处理watch的数组 例如： watchData4: ['someMethod', 'anotherMethod'],
@@ -534,7 +534,7 @@ export default function (input: string): string {
                                         );
                                         Node.decorators = [
                                             t.decorator(
-                                                t.identifier(`Wacth('${watchItem.key.name}')`)
+                                                t.identifier(`Watch('${watchItem.key.name}')`)
                                             ),
                                         ];
                                         classMethods.push(Node);
@@ -561,7 +561,7 @@ export default function (input: string): string {
                                         );
                                         Node.decorators = [
                                             t.decorator(
-                                                t.identifier(`Wacth('${watchItem.key.name}')`)
+                                                t.identifier(`Watch('${watchItem.key.name}')`)
                                             ),
                                         ];
                                         classMethods.push(Node);
@@ -598,7 +598,7 @@ export default function (input: string): string {
 
                                             Node.decorators = [
                                                 t.decorator(
-                                                    t.callExpression(t.identifier("Wacth"), [
+                                                    t.callExpression(t.identifier("Watch"), [
                                                         t.stringLiteral(watchItem.key.name),
                                                         t.objectExpression(
                                                             [deep, immediate]
@@ -644,7 +644,7 @@ export default function (input: string): string {
                             //         false
                             //     );
                             //     Node.decorators = [
-                            //         t.decorator(t.identifier(`Wacth('${name}')`)),
+                            //         t.decorator(t.identifier(`Watch('${name}')`)),
                             //     ];
                             //     classMethods.push(Node);
                             // }
